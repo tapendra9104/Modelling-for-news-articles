@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "news-topic-analysis"
+version = "0.1.0"
+description = "AI-based topic modeling and trend analysis for large collections of news articles."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Codex" }
+]
+keywords = ["nlp", "topic-modeling", "news", "trend-analysis", "streamlit", "lda", "nmf"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "feedparser>=6.0",
+  "matplotlib>=3.8",
+  "nltk>=3.9",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "plotly>=6.0",
+  "requests>=2.32",
+  "scikit-learn>=1.6",
+  "streamlit>=1.43",
+  "wordcloud>=1.9",
+]
+
+[project.optional-dependencies]
+spacy = ["spacy>=3.8"]
+bertopic = [
+  "bertopic>=0.17",
+  "sentence-transformers>=3.4",
+  "umap-learn>=0.5",
+]
+database = [
+  "SQLAlchemy>=2.0",
+  "pymongo>=4.10",
+  "PyMySQL>=1.1",
+]
+dev = ["pytest>=8.3"]
+
+[project.scripts]
+news-topics = "news_topic_analysis.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-p no:cacheprovider"
+testpaths = ["tests"]

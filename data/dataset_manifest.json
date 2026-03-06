@@ -1,0 +1,7 @@
+{
+  "datasets": [
+    {"name": "news_articles_demo", "path": "data/raw/news_articles_demo.csv", "rows": 24, "purpose": "offline demo dataset"},
+    {"name": "news_articles_extended", "path": "data/raw/news_articles_extended.csv", "rows": 96, "purpose": "main bundled project dataset"},
+    {"name": "news_articles_evaluation", "path": "data/raw/news_articles_evaluation.csv", "rows": 12, "purpose": "holdout evaluation dataset"}
+  ]
+}
