@@ -1,15 +1,27 @@
 # AI-Based Topic Modeling and Trend Analysis for News Articles
 
+![CI](https://img.shields.io/github/actions/workflow/status/tapendra9104/Modelling-for-news-articles/ci.yml?branch=main&style=for-the-badge&label=tests)
 ![Python](https://img.shields.io/badge/Python-3.11%2B-0F4C5C?style=for-the-badge&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-C97B3B?style=for-the-badge&logo=streamlit&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-Topic%20Modeling-6B9080?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-102A43?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-Ready-6B9080?style=for-the-badge&logo=docker&logoColor=white)
+![Datasets](https://img.shields.io/badge/Datasets-Included-9A031E?style=for-the-badge)
+![License](https://img.shields.io/github/license/tapendra9104/Modelling-for-news-articles?style=for-the-badge)
 
-This repository turns a final-year-project idea into a professional news intelligence platform. It ingests large collections of news articles, preprocesses text with NLP, discovers hidden themes using topic modeling, tracks how topics evolve over time, and presents the results in a polished Streamlit dashboard.
+This repository delivers a complete AI-powered news intelligence platform built for final-year-project presentation and practical analytics work. It collects news articles, preprocesses text with NLP, discovers hidden themes through topic modeling, tracks how discussions evolve over time, and presents the results in a professional Streamlit dashboard.
 
-The project is designed for journalism analytics, research, media monitoring, business intelligence, and academic demonstration. It combines data collection, preprocessing, topic extraction, trend detection, recommendation logic, evaluation, and presentation assets in one end-to-end Python application.
+The project is built for journalism analytics, media monitoring, research workflows, and academic demonstration. Instead of focusing on a single model, it covers the full pipeline: ingestion, preprocessing, topic extraction, trend detection, article recommendation, evaluation, persistence, deployment, and GitHub-ready presentation assets.
 
-## Project Snapshot
+## Why This Project Matters
+
+News platforms publish large volumes of content every day, making manual analysis slow and inconsistent. This system automates that work by:
+
+- discovering hidden topics from large collections of articles
+- identifying trending and emerging themes over time
+- grouping similar articles and related topic clusters
+- recommending relevant articles based on content similarity
+- presenting insights in a dashboard suitable for technical review and viva presentation
+
+## Key Highlights
 
 - End-to-end workflow from data ingestion to dashboard delivery
 - Topic modeling with `LDA`, `NMF`, and optional `BERTopic`
@@ -17,6 +29,7 @@ The project is designed for journalism analytics, research, media monitoring, bu
 - Professional Streamlit dashboard with executive, technical, and project-brief views
 - Offline datasets for demo, extended analysis, and evaluation
 - Optional MySQL and MongoDB persistence
+- Docker-ready deployment files
 - Auto-generated presentation graphics for GitHub, viva, and project reporting
 
 ## Dashboard Preview
@@ -28,6 +41,31 @@ The project is designed for journalism analytics, research, media monitoring, bu
 ### Technology Stack Graphic
 
 ![Technology Stack](docs/assets/technology-stack.png)
+
+More visuals and preview notes are available in [docs/screenshots.md](docs/screenshots.md).
+
+## Technology Stack
+
+- `Python` for CLI commands, data orchestration, and dashboard runtime
+- `pandas` for data preparation, analytics tables, and artifact persistence
+- `NLTK` and optional `spaCy` for tokenization and lemmatization
+- `scikit-learn` for vectorization, `LDA`, `NMF`, similarity, and evaluation
+- `BERTopic` as an optional advanced topic modeling backend
+- `Streamlit` and `Plotly` for the professional analytics dashboard
+- `Matplotlib` and `WordCloud` for generated visual assets
+- `SQLAlchemy` and `PyMongo` for optional MySQL and MongoDB persistence
+
+## Core Capabilities
+
+- Multi-source ingestion from offline CSV datasets, RSS feeds, and HTML scraping
+- Automated preprocessing with cleaning, tokenization, stopword removal, and lemmatization
+- Topic extraction and topic labeling
+- Trend detection across publication dates
+- Domain classification for major news categories
+- Topic relationship analysis using similarity scores
+- Similar-article recommendation engine
+- Dashboard views for executive insights, topic exploration, diagnostics, and project documentation
+- Evaluation outputs for accuracy, F1 scores, confusion analysis, and presentation reporting
 
 ## What the project includes
 
