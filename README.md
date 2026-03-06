@@ -1,6 +1,33 @@
 # AI-Based Topic Modeling and Trend Analysis for News Articles
 
-This repository turns the final-year-project brief into a runnable Python application. It ingests news articles, preprocesses text, extracts topics with multiple algorithms, tracks topic momentum over time, recommends related stories, and exposes the results through a Streamlit dashboard.
+![Python](https://img.shields.io/badge/Python-3.11%2B-0F4C5C?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-C97B3B?style=for-the-badge&logo=streamlit&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-Topic%20Modeling-6B9080?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-102A43?style=for-the-badge)
+
+This repository turns a final-year-project idea into a professional news intelligence platform. It ingests large collections of news articles, preprocesses text with NLP, discovers hidden themes using topic modeling, tracks how topics evolve over time, and presents the results in a polished Streamlit dashboard.
+
+The project is designed for journalism analytics, research, media monitoring, business intelligence, and academic demonstration. It combines data collection, preprocessing, topic extraction, trend detection, recommendation logic, evaluation, and presentation assets in one end-to-end Python application.
+
+## Project Snapshot
+
+- End-to-end workflow from data ingestion to dashboard delivery
+- Topic modeling with `LDA`, `NMF`, and optional `BERTopic`
+- Trend analysis, domain categorization, topic relationships, and article recommendations
+- Professional Streamlit dashboard with executive, technical, and project-brief views
+- Offline datasets for demo, extended analysis, and evaluation
+- Optional MySQL and MongoDB persistence
+- Auto-generated presentation graphics for GitHub, viva, and project reporting
+
+## Dashboard Preview
+
+### Project Overview Graphic
+
+![Project Overview](docs/assets/project-overview.png)
+
+### Technology Stack Graphic
+
+![Technology Stack](docs/assets/technology-stack.png)
 
 ## What the project includes
 
@@ -231,3 +258,13 @@ CSV_PATH=data/raw/news_articles_extended.csv
 - Run metadata now includes per-source collector diagnostics, so partial ingestion failures are visible in the dashboard and saved summaries.
 - The dashboard now includes an evaluation section with confusion charts, split performance, and presentation-ready reporting when labeled datasets are used.
 - The dashboard now includes a built-in project overview section that explains the project use cases, workflow, technology stack, and shows the generated infographic images automatically.
+
+## Suggested GitHub Metadata
+
+**Repository description**
+
+`AI-powered news article topic modeling and trend analysis platform with NLP, topic discovery, recommendations, and a professional Streamlit dashboard.`
+
+**Suggested topics**
+
+`python`, `nlp`, `topic-modeling`, `news-analysis`, `streamlit`, `scikit-learn`, `lda`, `nmf`, `bertopic`, `final-year-project`
